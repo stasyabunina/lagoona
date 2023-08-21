@@ -1,0 +1,114 @@
+.contacts {
+  margin-bottom: 40px;
+
+  &__wrapper {
+    padding: 45px 45px;
+    display: flex;
+    border-radius: 15px;
+    background-color: var(--white-color);
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__list {
+    margin: 0;
+    margin-right: 52px;
+    margin-bottom: 45px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    margin: 0;
+    padding-bottom: 23px;
+    display: flex;
+    border-bottom: var(--dark-white-color) solid 1px;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__mail {
+    max-width: 128px;
+  }
+
+  &__link {
+    color: var(--light-brown-color);
+    transition: color 0.2s linear;
+
+    &:focus-visible {
+      color: var(--light-brown-color);
+      outline: 1px solid var(--light-brown-color);
+      outline-offset: 5px;
+    }
+
+    &:active {
+      color: var(--brown-color);
+      outline: none;
+    }
+  }
+
+  &__btn {
+    min-width: 100px;
+    padding: 27px 30px;
+    background-color: transparent;
+    color: var(--light-brown-color);
+    border: solid var(--light-brown-color) 1px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.2s linear;
+
+    &:active {
+      color: var(--white-color);
+      background-color: var(--brown-color);
+    }
+
+    &:focus-visible {
+      color: var(--white-color);
+      background-color: var(--light-brown-color);
+    }
+  }
+
+  &__img {
+    width: 653px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+}
+
+.contact {
+  &__name {
+    max-width: 145px;
+    min-width: 145px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__mail-use {
+    color: var(--light-gray-color);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+}

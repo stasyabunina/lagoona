@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["obj","prop"],"mappings":"aAAA,IAAMA,IAAM,CAAC,EACPC,KAAOD,eAAG,EAAHA,IAAKC","file":"script.js","sourcesContent":["const obj = {}\nconst prop = obj?.prop\n"]}

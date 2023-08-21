@@ -1,0 +1,157 @@
+.header {
+  padding-top: 30px;
+  margin-bottom: 70px;
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__logo {
+    margin-right: 40px;
+  }
+
+  &__logo-img {
+    width: 261px;
+    height: 54px;
+  }
+
+  &__info {
+    max-width: 715px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+  }
+
+  &__telephone {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--gray-color);
+    transition: color 0.2s linear;
+
+    &:focus-visible {
+      color: var(--light-brown-color);
+      outline: 1px solid var(--light-brown-color);
+      outline-offset: 5px;
+    }
+
+    &:active {
+      color: var(--brown-color);
+      outline: none;
+    }
+  }
+
+  &__account-link {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--light-brown-color);
+    fill: var(--light-brown-color);
+    transition: color 0.2s linear, fill 0.2s linear;
+
+    &:focus-visible {
+      color: var(--light-brown-color);
+      fill: var(--light-brown-color);
+      outline: 1px solid var(--light-brown-color);
+      outline-offset: 5px;
+    }
+
+    &:active {
+      color: var(--brown-color);
+      fill: var(--light-brown-color);
+      outline: none;
+    }
+  }
+
+  &__account-svg {
+    margin-right: 7px;
+  }
+
+  &__nav {
+    padding: 14px 45px;
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 15px;
+  }
+
+  &__nav-menu {
+    margin-right: auto;
+  }
+
+  &__nav-list {
+    max-width: 642px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__nav-list-item {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+
+  &__menu-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--gray-color);
+    transition: color 0.2s linear;
+
+    &:focus-visible {
+      color: var(--light-brown-color);
+      outline: 1px solid var(--light-brown-color);
+      outline-offset: 5px;
+    }
+
+    &:active {
+      color: var(--brown-color);
+      outline: none;
+    }
+  }
+
+  &__nav-button {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__button-list {
+    max-width: 327px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    min-width: 100px;
+    padding: 13px 20px;
+    background-color: transparent;
+    color: var(--light-brown-color);
+    border: solid var(--light-brown-color) 1px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.2s linear;
+
+    &:focus-visible {
+      color: var(--white-color);
+      background-color: var(--light-brown-color);
+    }
+
+    &:active {
+      color: var(--white-color);
+      background-color: var(--brown-color);
+    }
+  }
+}

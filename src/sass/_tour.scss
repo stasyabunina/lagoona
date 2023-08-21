@@ -1,0 +1,84 @@
+.tour {
+  &__wrapper {
+    padding: 45px;
+    border-radius: 15px;
+    background-color: #E5E5E5;
+  }
+
+  &__heading {
+    padding-left: 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 28px;
+    border-radius: 15px;
+    background-color: var(--white-color);
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-right: 41px;
+    }
+
+    &:last-child {
+      margin-right: 51px;
+    }
+  }
+
+  &__select-label {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  &__select-input {
+    border: none;
+    width: 169px;
+  }
+
+  &__select-input-second {
+    width: 121px;
+  }
+
+  &__select-nights-amount {
+    border-bottom: solid var(--dark-white-color) 1px;
+  }
+
+  &__select-tourists-amount {
+    border-bottom: solid var(--dark-white-color) 1px;
+  }
+
+  &__select-btn {
+    padding: 13px 30px;
+  }
+
+  &__button {
+    min-width: 100px;
+    padding: 13px 20px;
+    background-color: transparent;
+    color: var(--light-brown-color);
+    border: solid var(--light-brown-color) 1px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.2s linear;
+
+    &:active {
+      color: var(--white-color);
+      background-color: var(--brown-color);
+    }
+
+    &:focus-visible {
+      color: var(--white-color);
+      background-color: var(--light-brown-color);
+    }
+  }
+}

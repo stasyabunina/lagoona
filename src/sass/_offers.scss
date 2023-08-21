@@ -1,0 +1,120 @@
+.offers {
+  &__content {
+    min-height: 540px;
+    display: flex;
+  }
+
+  &__card-block {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 24px) / 2);
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 40px 108px 40px 45px;
+    background-color: var(--light-gray-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__card-first {
+    background-image: linear-gradient(to right, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 66.67%), url("img/offer-card-first.jpg");
+  }
+
+  &__card-second {
+    background-image: linear-gradient(to right, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 66.67%), url("img/offer-card-second.jpg");
+  }
+
+  &__card-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(to top, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 66.67%), url("img/offer-card-third.jpg");
+  }
+
+  &__card-heading {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--white-color);
+  }
+
+  &__card-heading-third {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  &__price {
+    margin-bottom: 47px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--white-color);
+    opacity: 0.8;
+  }
+
+  &__price-third {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  &__more {
+    display: inline-flex;
+    align-items: center;
+    max-width: 105px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--yellow-color);
+    transition: color 0.2s linear;
+
+    .offers__more-svg {
+      transition: transform 0.2s ease;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:focus-visible::before {
+      outline: 1px var(--light-brown-color) solid;
+      outline-offset: 8px;
+    }
+
+    &:active::before {
+      outline: none;
+    }
+
+    &:active {
+      color: var(--white-color);
+    }
+
+    &:active .offers__more-svg {
+      transform: none;
+    }
+  }
+
+  &__more-text {
+    margin-right: 5px;
+  }
+}

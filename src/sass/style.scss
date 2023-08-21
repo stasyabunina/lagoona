@@ -1,0 +1,80 @@
+@import "normalize.css";
+@import "fonts";
+@import "root";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+  background-color: var(--dark-white-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 0;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+}
+
+.section {
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 45px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--light-black-color);
+  }
+}
+
+@import "any-hover";
+@import "header";
+@import "offers";
+@import "about";
+@import "services";
+@import "benefits";
+@import "accomodation";
+@import "tour";
+@import "contacts";
+@import "footer";

@@ -1,0 +1,146 @@
+.accommodation {
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+
+  &__card {
+    width: 374px;
+    min-height: 440px;
+    margin: 0;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    overflow: hidden;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n+3) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card-latest {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 27px;
+    background-image: linear-gradient(to top, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0) 66.67%), url("img/hotel-card-latest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--light-gray-color);
+  }
+}
+
+.hotel {
+  &__img {
+    object-fit: contain;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 45px 45px;
+  }
+
+  &__worth {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  &__min-price {
+    margin-right: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--light-gray-color);
+  }
+
+  &__price {
+    margin-right: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &__per-night {
+    margin-right: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &__star-icon {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &__place {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--light-gray-color);
+  }
+
+  &__all-options {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--white-color);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__button {
+    min-width: 100px;
+    padding: 13px 20px;
+    background-color: transparent;
+    color: var(--light-brown-color);
+    border: solid var(--light-brown-color) 1px;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.2s linear;
+
+    &:active {
+      color: var(--white-color);
+      background-color: var(--brown-color);
+    }
+
+    &:focus-visible {
+      color: var(--white-color);
+      background-color: var(--light-brown-color);
+    }
+  }
+}

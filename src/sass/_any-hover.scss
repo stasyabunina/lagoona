@@ -1,0 +1,99 @@
+@media (any-hover: hover) {
+  .header {
+    &__telephone {
+      &:hover {
+        color: var(--light-brown-color);
+      }
+    }
+
+    &__account-link {
+      &:hover {
+        color: var(--yellow-color);
+        fill: var(--yellow-color);
+      }
+    }
+
+    &__menu-link {
+      &:hover {
+        color: var(--light-brown-color);
+      }
+    }
+
+    &__button {
+      &:hover {
+        color: var(--white-color);
+        background-color: var(--light-brown-color);
+      }
+    }
+  }
+
+  .offers {
+    &__more {
+      &:hover .offers__more-svg {
+        transform: translateX(11px);
+      }
+    }
+  }
+
+  .service {
+    &__link {
+      &:hover {
+        color: var(--yellow-color);
+        stroke: var(--yellow-color);
+      }
+
+      &:hover .service__svg {
+        transform: translateX(11px);
+      }
+    }
+  }
+
+  .hotel {
+    &__button {
+      &:hover {
+        color: var(--white-color);
+        background-color: var(--light-brown-color);
+      }
+    }
+  }
+
+  .tour {
+    &__button {
+      &:hover {
+        color: var(--white-color);
+        background-color: var(--light-brown-color);
+      }
+    }
+  }
+
+  .contacts {
+    &__link {
+      &:hover {
+        color: var(--yellow-color);
+      }
+    }
+
+    &__btn {
+      &:hover {
+        color: var(--white-color);
+        background-color: var(--light-brown-color);
+      }
+    }
+  }
+
+  .footer {
+    &__link {
+      &:hover {
+        color: var(--yellow-color);
+      }
+    }
+  }
+
+  .socials {
+    &__icon {
+      &:hover {
+        color: var(--light-brown-color);
+      }
+    }
+  }
+}

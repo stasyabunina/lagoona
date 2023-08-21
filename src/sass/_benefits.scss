@@ -1,0 +1,72 @@
+.benefits {
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+}
+
+.benefit {
+  &__card {
+    width: 276px;
+    min-height: 276px;
+    margin: 0;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    padding: 116px 42px 32px 45px;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: 21% 19%;
+    background-size: 67px 66px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__card-first {
+    background-image: url("img/bathtub-icon.svg");
+  }
+
+  &__card-second {
+    background-image: url("img/hanger-icon.svg");
+  }
+
+  &__card-third {
+    background-image: url("img/heating-icon.svg");
+  }
+
+  &__card-fourth {
+    background-image: url("img/hotel-key-icon.svg");
+  }
+
+  &__card-fiveth {
+    background-image: url("img/parking-icon.svg");
+  }
+
+  &__card-sixth {
+    background-image: url("img/reception-icon.svg");
+  }
+
+  &__card-seventh {
+    background-image: url("img/security-box-icon.svg");
+  }
+
+  &__card-eighth {
+    background-image: url("img/swimming-pool-icon.svg");
+  }
+
+  &__desc {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
